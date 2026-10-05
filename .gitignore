@@ -1,4 +1,12 @@
+# Hệ điều hành / công cụ
 .DS_Store
+graphify-out/
+
+# Sinh ra khi chạy Nginx (scripts/run.sh)
 logs/
 tmp/
-graphify-out/
+
+# Chỉ lưu ở máy local: lịch sử làm bài, bằng chứng, tài liệu môn học
+docs/
+evidence/
+AGENT-LOG.md
