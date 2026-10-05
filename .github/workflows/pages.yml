@@ -1,0 +1,33 @@
+# Đưa thư mục site/ (cùng document root với Nginx) lên GitHub Pages.
+# Bật một lần: Settings → Pages → Build and deployment → Source: GitHub Actions.
+name: Deploy site/ lên GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths: ["site/**", ".github/workflows/pages.yml"]
+  workflow_dispatch:            # cho phép bấm "Run workflow" bằng tay trong tab Actions
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:                    # chỉ một lần deploy chạy tại một thời điểm
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: site            # chỉ site/ được public; nginx/, scripts/ không lên Pages
+      - id: deployment
+        uses: actions/deploy-pages@v4
