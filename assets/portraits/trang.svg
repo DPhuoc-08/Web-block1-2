@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <!-- Chân dung minh họa tạm: Doctor/Shipwright. Thay bằng ảnh thật (cùng tên file hoặc sửa src trong index.html). -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#f4f4f4"/><stop offset=".65" stop-color="#c0c0c0"/><stop offset="1" stop-color="#7e7e7e"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eeeeee"/><stop offset="1" stop-color="#bdbdbd"/>
+    </linearGradient>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="31"/>
+      <feDisplacementMap in="SourceGraphic" scale="3.5"/>
+    </filter>
+  </defs>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <g fill="none" stroke="#a6a6a6" stroke-width="3">
+    <path d="M30 0v280M80 0v280M320 0v280M370 0v280"/>
+    <path d="M30 70h50M30 190h50M320 110h50M320 230h50" stroke-width="2"/>
+    <path d="M330 40l30 30m-30 0l30-30" stroke-width="4"/>
+  </g>
+  <g filter="url(#rough)" stroke="#141414" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M136 150c-8-54 22-80 64-80s72 26 64 80l8 100c-16 12-32 6-36-10l10-80h-92l10 80c-4 16-20 22-36 10z" fill="#2a2a2a"/>
+    <path d="M60 280c12-44 72-60 140-60s128 16 140 60z" fill="#e6e6e6"/>
+    <path d="M172 222l28 58 28-58z" fill="#3a3a3a"/>
+    <path d="M150 230l30 50M250 230l-30 50" fill="none" stroke-width="3"/>
+    <path d="M178 188v34c8 8 36 8 44 0v-34z" fill="#cfcfcf"/>
+    <path d="M168 222c-2 28 12 40 24 40M232 222c2 28-12 40-24 40" fill="none" stroke-width="3.5"/>
+    <circle cx="200" cy="264" r="7" fill="#9a9a9a" stroke-width="3"/>
+    <ellipse cx="146" cy="152" rx="11" ry="16" fill="#d6d6d6"/>
+    <ellipse cx="254" cy="152" rx="11" ry="16" fill="#d6d6d6"/>
+    <path d="M146 140c0-36 24-58 54-58s54 22 54 58c0 44-24 76-54 76s-54-32-54-76z" fill="url(#skin)"/>
+    <path d="M146 142c2-40 26-56 54-56s52 16 54 56c-18-12-38-24-54-38-16 16-34 28-54 38z" fill="#2a2a2a"/>
+    <path d="M150 104c-4-40 16-60 50-60s54 20 50 60z" fill="#d4d4d4"/>
+    <path d="M136 106c22-12 106-12 128 0-22 10-106 10-128 0z" fill="#bdbdbd"/>
+    <circle cx="200" cy="74" r="14" fill="#f5f5f5" stroke-width="3"/>
+    <path d="M195 64h10v5h5v10h-5v5h-10v-5h-5V69h5z" fill="#444" stroke="none"/>
+    <path d="M166 138q12-6 24 0M210 138q12-6 24 0" fill="none" stroke-width="5"/>
+    <ellipse cx="179" cy="152" rx="10" ry="9" fill="#fff"/>
+    <ellipse cx="221" cy="152" rx="10" ry="9" fill="#fff"/>
+    <circle cx="180" cy="153" r="5.5" fill="#111" stroke="none"/>
+    <circle cx="222" cy="153" r="5.5" fill="#111" stroke="none"/>
+    <path d="M168 146l-4-4M232 146l4-4" fill="none" stroke-width="3"/>
+    <path d="M200 160q-6 11 3 14" fill="none" stroke-width="3"/>
+    <path d="M180 186q20 14 40 0" fill="none"/>
+  </g>
+  <text x="386" y="268" text-anchor="end" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#333">N.H.M.T</text>
+</svg>

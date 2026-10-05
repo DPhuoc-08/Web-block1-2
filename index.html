@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="vi" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bảng Truy Nã · Băng Hải Tặc Dấu Chấm Phẩy</title>
+  <meta name="description" content="Portfolio nhóm 4 thành viên dưới dạng bảng lệnh truy nã hải tặc: chân dung, vai trò, tiền truy nã và hồ sơ mật của từng người.">
+  <link rel="icon" href="assets/jolly-roger.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,400;0,600;1,400&family=Pirata+One&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Có JavaScript thì đổi class để CSS bật các phần chỉ dành cho tương tác -->
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="js/audio.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#wanted-board">Bỏ qua, đến thẳng bảng truy nã</a>
+
+  <header class="site-header">
+    <div class="site-header__crew">
+      <img class="site-header__flag" src="assets/jolly-roger.svg" alt="" width="56" height="56">
+      <div>
+        <p class="site-header__kicker" lang="en">The Semicolon Pirates</p>
+        <h1 class="site-header__title">Băng Hải Tặc Dấu Chấm Phẩy</h1>
+      </div>
+    </div>
+
+    <nav class="site-nav" aria-label="Điều hướng chính">
+      <ul>
+        <li><a href="#wanted-board">Bảng truy nã</a></li>
+        <li><a href="#bounty-ledger">Sổ truy nã</a></li>
+      </ul>
+    </nav>
+
+    <p class="site-header__total">
+      <span class="site-header__total-label">Tổng truy nã cả băng</span>
+      <span class="bounty">
+        <span class="berry" aria-hidden="true">฿</span><data class="js-count" data-fill="total" value="4276000000">4.276.000.000</data><span class="visually-hidden"> Berry</span>
+      </span>
+    </p>
+
+    <button class="sound-toggle js-only" type="button" aria-pressed="false">
+      <svg class="sound-toggle__icon" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+        <path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/>
+        <path class="sound-toggle__waves" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path class="sound-toggle__mute" d="M16 9l6 6M22 9l-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="sound-toggle__label">Âm thanh: tắt</span>
+    </button>
+  </header>
+
+  <main id="main">
+    <!-- ============ SECTION 1: BẢNG TRUY NÃ ============ -->
+    <section id="wanted-board" class="board" aria-labelledby="board-title" tabindex="-1">
+      <div class="board__sign">
+        <h2 id="board-title" class="board__title">Bảng truy nã</h2>
+      </div>
+      <p class="board__hint js-only">
+        Bấm vào poster hoặc nhấn <kbd>Enter</kbd> để phóng to.
+        Kéo giật poster hoặc nhấn <kbd>T</kbd> để xé nó khỏi tường.
+        Bấm <strong>DEAD OR ALIVE</strong> để mở hồ sơ mật.
+      </p>
+      <p class="board__hint no-js-only">Mỗi lệnh truy nã đi kèm hồ sơ mật của Hải quân ngay bên dưới.</p>
+
+      <ul class="board__list">
+        <!-- ---------- Captain ---------- -->
+        <li class="poster" data-member="hiep" style="--tilt: -2.4deg; --sway-dur: 5.2s; --sway-delay: -1.3s">
+          <span class="nail nail--left" aria-hidden="true"></span>
+          <span class="nail nail--right" aria-hidden="true"></span>
+          <div class="poster__sway">
+            <article class="poster__paper" data-loc="52400" data-projects="8" data-bugs="287">
+              <div class="poster__face poster__face--front">
+                <p class="poster__wanted" lang="en">Wanted</p>
+                <figure class="poster__photo">
+                  <div class="poster__halftone">
+                    <img src="assets/portraits/hiep.svg" alt="Chân dung phác thảo Phan Quang Hiệp: đội mũ rơm, cười toe, vết sẹo dưới mắt" width="400" height="280" draggable="false">
+                  </div>
+                </figure>
+                <button class="poster__doa" type="button" aria-expanded="false" aria-controls="dossier-hiep" disabled lang="en">Dead or Alive</button>
+                <h3 class="poster__name">
+                  <button class="poster__open" type="button" aria-keyshortcuts="T" disabled>
+                    <span class="visually-hidden">Phóng to lệnh truy nã: </span>
+                    <span class="poster__surname">Phan Quang</span>
+                    <span class="poster__given">Hiệp</span>
+                  </button>
+                </h3>
+                <p class="poster__bounty bounty"><span class="berry" aria-hidden="true">฿</span><data data-fill="bounty" value="1211000000">1.211.000.000</data><span aria-hidden="true">-</span><span class="visually-hidden"> Berry</span></p>
+                <p class="poster__epithet">«Vua Merge» · Thuyền trưởng <span lang="en">(Captain)</span></p>
+                <p class="poster__footer"><span>Số hiệu 24127039</span><span class="poster__marine" lang="en">Marine</span></p>
+              </div>
+
+              <section class="poster__face poster__face--back dossier" id="dossier-hiep" aria-labelledby="dossier-hiep-title">
+                <header class="dossier__head">
+                  <p class="dossier__agency">Bộ Tổng Tư lệnh Hải quân · Hồ sơ mật</p>
+                  <h4 class="dossier__title" id="dossier-hiep-title" tabindex="-1"><span lang="en">Secret Marine Dossier</span> · MR-24127039</h4>
+                  <p class="dossier__stamp" aria-hidden="true">Top Secret</p>
+                </header>
+                <dl class="dossier__facts">
+                  <div><dt>Đối tượng</dt><dd>Phan Quang Hiệp</dd></div>
+                  <div><dt>Vai trò</dt><dd>Thuyền trưởng (Captain)</dd></div>
+                  <div><dt>Tội danh</dt><dd>Chỉ huy băng qua 8 đồ án, tự ý quyết định kiến trúc, gộp nhánh lúc 3 giờ sáng.</dd></div>
+                  <div><dt>Vũ khí</dt><dd><ul class="dossier__tags"><li>C++</li><li>JavaScript</li><li>Git</li><li>Figma</li></ul></dd></div>
+                  <div><dt>Mức nguy hiểm</dt><dd><span class="dossier__threat" aria-hidden="true">☠︎☠︎☠︎☠︎☠︎</span><span class="visually-hidden">5 trên 5</span></dd></div>
+                </dl>
+                <h5 class="dossier__case-title">Vụ án nổi bật: Chiến dịch Gộp Nhánh mùa đồ án</h5>
+                <dl class="dossier__case">
+                  <dt>Bối cảnh</dt>
+                  <dd>Đồ án nhóm 4 người. Hai tuần trước hạn nộp, kho mã có 17 nhánh Git chồng chéo, lần gộp nào cũng làm hỏng bản build.</dd>
+                  <dt>Hành động</dt>
+                  <dd>Đặt quy ước tên nhánh, bắt buộc mỗi pull request có một người review, chia mã nguồn theo module để các thành viên không sửa đè lên nhau.</dd>
+                  <dt>Kết quả</dt>
+                  <dd>Không còn xung đột vào phút chót. Nhóm nộp bài sớm 2 ngày.</dd>
+                </dl>
+                <table class="dossier__calc">
+                  <caption>Cách Hải quân định giá</caption>
+                  <tbody>
+                    <tr><th scope="row">Dòng code</th><td><span data-fill="loc">52.400</span> × <span data-rate="loc">10.000</span></td><td data-fill="loc-berry">524.000.000</td></tr>
+                    <tr><th scope="row">Dự án</th><td><span data-fill="projects">8</span> × <span data-rate="projects">50.000.000</span></td><td data-fill="projects-berry">400.000.000</td></tr>
+                    <tr><th scope="row">Bug đã diệt</th><td><span data-fill="bugs">287</span> × <span data-rate="bugs">1.000.000</span></td><td data-fill="bugs-berry">287.000.000</td></tr>
+                  </tbody>
+                  <tfoot><tr><th scope="row" colspan="2">Tiền truy nã</th><td>฿ <span data-fill="bounty">1.211.000.000</span></td></tr></tfoot>
+                </table>
+                <p class="dossier__note"><strong>Ghi chú của Hải quân:</strong> Đối tượng cực kỳ nguy hiểm khi nói câu “để tui merge cho”.</p>
+                <button class="dossier__back js-only" type="button" disabled>↩ Lật lại lệnh truy nã</button>
+              </section>
+            </article>
+          </div>
+          <span class="poster__scrap" aria-hidden="true"></span>
+        </li>
+
+        <!-- ---------- Navigator ---------- -->
+        <li class="poster poster--nail-left" data-member="nhan" style="--tilt: 1.8deg; --sway-dur: 4.1s; --sway-delay: -2.2s">
+          <span class="nail nail--left" aria-hidden="true"></span>
+          <div class="poster__sway">
+            <article class="poster__paper" data-loc="41800" data-projects="7" data-bugs="196">
+              <div class="poster__face poster__face--front">
+                <p class="poster__wanted" lang="en">Wanted</p>
+                <figure class="poster__photo">
+                  <div class="poster__halftone">
+                    <img src="assets/portraits/nhan.svg" alt="Chân dung phác thảo Trần Nguyễn Đình Nhân: tóc buộc khăn, bút chì gài tai, la bàn đeo trước ngực" width="400" height="280" draggable="false">
+                  </div>
+                </figure>
+                <button class="poster__doa" type="button" aria-expanded="false" aria-controls="dossier-nhan" disabled lang="en">Dead or Alive</button>
+                <h3 class="poster__name">
+                  <button class="poster__open" type="button" aria-keyshortcuts="T" disabled>
+                    <span class="visually-hidden">Phóng to lệnh truy nã: </span>
+                    <span class="poster__surname">Trần Nguyễn Đình</span>
+                    <span class="poster__given">Nhân</span>
+                  </button>
+                </h3>
+                <p class="poster__bounty bounty"><span class="berry" aria-hidden="true">฿</span><data data-fill="bounty" value="964000000">964.000.000</data><span aria-hidden="true">-</span><span class="visually-hidden"> Berry</span></p>
+                <p class="poster__epithet">«La Bàn Sống» · Hoa tiêu <span lang="en">(Navigator)</span></p>
+                <p class="poster__footer"><span>Số hiệu 24127093</span><span class="poster__marine" lang="en">Marine</span></p>
+              </div>
+
+              <section class="poster__face poster__face--back dossier" id="dossier-nhan" aria-labelledby="dossier-nhan-title">
+                <header class="dossier__head">
+                  <p class="dossier__agency">Bộ Tổng Tư lệnh Hải quân · Hồ sơ mật</p>
+                  <h4 class="dossier__title" id="dossier-nhan-title" tabindex="-1"><span lang="en">Secret Marine Dossier</span> · MR-24127093</h4>
+                  <p class="dossier__stamp" aria-hidden="true">Top Secret</p>
+                </header>
+                <dl class="dossier__facts">
+                  <div><dt>Đối tượng</dt><dd>Trần Nguyễn Đình Nhân</dd></div>
+                  <div><dt>Vai trò</dt><dd>Hoa tiêu (Navigator)</dd></div>
+                  <div><dt>Tội danh</dt><dd>Vẽ hải đồ cho mọi dự án, ép cả băng tuân thủ deadline, phát tán wireframe trái phép.</dd></div>
+                  <div><dt>Vũ khí</dt><dd><ul class="dossier__tags"><li>Figma</li><li>Notion</li><li>HTML/CSS</li><li>Python</li></ul></dd></div>
+                  <div><dt>Mức nguy hiểm</dt><dd><span class="dossier__threat" aria-hidden="true">☠︎☠︎☠︎☠︎<span class="dossier__threat-off">☠︎</span></span><span class="visually-hidden">4 trên 5</span></dd></div>
+                </dl>
+                <h5 class="dossier__case-title">Vụ án nổi bật: Hải trình 6 tuần không trễ hạn</h5>
+                <dl class="dossier__case">
+                  <dt>Bối cảnh</dt>
+                  <dd>Dự án web của nhóm có yêu cầu mơ hồ, mỗi thành viên hiểu một kiểu. Hai tuần đầu gần như dậm chân tại chỗ.</dd>
+                  <dt>Hành động</dt>
+                  <dd>Chia backlog thành các chặng 1 tuần, vẽ wireframe trước khi viết code, tổ chức họp 15 phút vào mỗi tối thứ Hai.</dd>
+                  <dt>Kết quả</dt>
+                  <dd>Mọi đầu việc xong đúng mốc, không phải làm lại giao diện lần nào.</dd>
+                </dl>
+                <table class="dossier__calc">
+                  <caption>Cách Hải quân định giá</caption>
+                  <tbody>
+                    <tr><th scope="row">Dòng code</th><td><span data-fill="loc">41.800</span> × <span data-rate="loc">10.000</span></td><td data-fill="loc-berry">418.000.000</td></tr>
+                    <tr><th scope="row">Dự án</th><td><span data-fill="projects">7</span> × <span data-rate="projects">50.000.000</span></td><td data-fill="projects-berry">350.000.000</td></tr>
+                    <tr><th scope="row">Bug đã diệt</th><td><span data-fill="bugs">196</span> × <span data-rate="bugs">1.000.000</span></td><td data-fill="bugs-berry">196.000.000</td></tr>
+                  </tbody>
+                  <tfoot><tr><th scope="row" colspan="2">Tiền truy nã</th><td>฿ <span data-fill="bounty">964.000.000</span></td></tr></tfoot>
+                </table>
+                <p class="dossier__note"><strong>Ghi chú của Hải quân:</strong> Chưa từng lạc đường, trừ khi đi tìm quán cà phê có ổ cắm.</p>
+                <button class="dossier__back js-only" type="button" disabled>↩ Lật lại lệnh truy nã</button>
+              </section>
+            </article>
+          </div>
+          <span class="poster__scrap" aria-hidden="true"></span>
+        </li>
+
+        <!-- ---------- Sniper ---------- -->
+        <li class="poster" data-member="phuoc" style="--tilt: -1.2deg; --sway-dur: 6.3s; --sway-delay: -0.6s">
+          <span class="nail nail--left" aria-hidden="true"></span>
+          <span class="nail nail--right" aria-hidden="true"></span>
+          <div class="poster__sway">
+            <article class="poster__paper" data-loc="46300" data-projects="6" data-bugs="241">
+              <div class="poster__face poster__face--front">
+                <p class="poster__wanted" lang="en">Wanted</p>
+                <figure class="poster__photo">
+                  <div class="poster__halftone">
+                    <img src="assets/portraits/phuoc.svg" alt="Chân dung phác thảo Lê Nho Duy Phước: kính bảo hộ trên trán, một mắt nheo lại ngắm bắn" width="400" height="280" draggable="false">
+                  </div>
+                </figure>
+                <button class="poster__doa" type="button" aria-expanded="false" aria-controls="dossier-phuoc" disabled lang="en">Dead or Alive</button>
+                <h3 class="poster__name">
+                  <button class="poster__open" type="button" aria-keyshortcuts="T" disabled>
+                    <span class="visually-hidden">Phóng to lệnh truy nã: </span>
+                    <span class="poster__surname">Lê Nho Duy</span>
+                    <span class="poster__given">Phước</span>
+                  </button>
+                </h3>
+                <p class="poster__bounty bounty"><span class="berry" aria-hidden="true">฿</span><data data-fill="bounty" value="1004000000">1.004.000.000</data><span aria-hidden="true">-</span><span class="visually-hidden"> Berry</span></p>
+                <p class="poster__epithet">«Xạ Thủ Một Dòng» · Xạ thủ <span lang="en">(Sniper)</span></p>
+                <p class="poster__footer"><span>Số hiệu 24127508</span><span class="poster__marine" lang="en">Marine</span></p>
+              </div>
+
+              <section class="poster__face poster__face--back dossier" id="dossier-phuoc" aria-labelledby="dossier-phuoc-title">
+                <header class="dossier__head">
+                  <p class="dossier__agency">Bộ Tổng Tư lệnh Hải quân · Hồ sơ mật</p>
+                  <h4 class="dossier__title" id="dossier-phuoc-title" tabindex="-1"><span lang="en">Secret Marine Dossier</span> · MR-24127508</h4>
+                  <p class="dossier__stamp" aria-hidden="true">Top Secret</p>
+                </header>
+                <dl class="dossier__facts">
+                  <div><dt>Đối tượng</dt><dd>Lê Nho Duy Phước</dd></div>
+                  <div><dt>Vai trò</dt><dd>Xạ thủ (Sniper)</dd></div>
+                  <div><dt>Tội danh</dt><dd>Hạ gục bug từ khoảng cách xa, đọc log nhanh hơn đọc tin nhắn, tấn công segfault không báo trước.</dd></div>
+                  <div><dt>Vũ khí</dt><dd><ul class="dossier__tags"><li>C/C++</li><li>JavaScript</li><li>GDB</li><li>DevTools</li></ul></dd></div>
+                  <div><dt>Mức nguy hiểm</dt><dd><span class="dossier__threat" aria-hidden="true">☠︎☠︎☠︎☠︎<span class="dossier__threat-off">☠︎</span></span><span class="visually-hidden">4 trên 5</span></dd></div>
+                </dl>
+                <h5 class="dossier__case-title">Vụ án nổi bật: Phát bắn xuyên Segmentation fault</h5>
+                <dl class="dossier__case">
+                  <dt>Bối cảnh</dt>
+                  <dd>Chương trình quản lý dữ liệu viết bằng C++ thỉnh thoảng sập, và chỉ sập khi chạy với tập dữ liệu lớn. Không ai tái hiện được lỗi.</dd>
+                  <dt>Hành động</dt>
+                  <dd>Thu nhỏ dữ liệu đến mức vẫn còn lỗi, dùng GDB lần ngược call stack, phát hiện một con trỏ bị dùng sau khi đã giải phóng.</dd>
+                  <dt>Kết quả</dt>
+                  <dd>Sửa đúng 1 dòng code. Chương trình chạy ổn định với dữ liệu lớn gấp 10 lần.</dd>
+                </dl>
+                <table class="dossier__calc">
+                  <caption>Cách Hải quân định giá</caption>
+                  <tbody>
+                    <tr><th scope="row">Dòng code</th><td><span data-fill="loc">46.300</span> × <span data-rate="loc">10.000</span></td><td data-fill="loc-berry">463.000.000</td></tr>
+                    <tr><th scope="row">Dự án</th><td><span data-fill="projects">6</span> × <span data-rate="projects">50.000.000</span></td><td data-fill="projects-berry">300.000.000</td></tr>
+                    <tr><th scope="row">Bug đã diệt</th><td><span data-fill="bugs">241</span> × <span data-rate="bugs">1.000.000</span></td><td data-fill="bugs-berry">241.000.000</td></tr>
+                  </tbody>
+                  <tfoot><tr><th scope="row" colspan="2">Tiền truy nã</th><td>฿ <span data-fill="bounty">1.004.000.000</span></td></tr></tfoot>
+                </table>
+                <p class="dossier__note"><strong>Ghi chú của Hải quân:</strong> Từng bắn trúng bug trong một file chưa bao giờ mở.</p>
+                <button class="dossier__back js-only" type="button" disabled>↩ Lật lại lệnh truy nã</button>
+              </section>
+            </article>
+          </div>
+          <span class="poster__scrap" aria-hidden="true"></span>
+        </li>
+
+        <!-- ---------- Doctor / Shipwright ---------- -->
+        <li class="poster poster--nail-right" data-member="trang" style="--tilt: 2.4deg; --sway-dur: 4.7s; --sway-delay: -3.1s">
+          <span class="nail nail--right" aria-hidden="true"></span>
+          <div class="poster__sway">
+            <article class="poster__paper" data-loc="38900" data-projects="7" data-bugs="358">
+              <div class="poster__face poster__face--front">
+                <p class="poster__wanted" lang="en">Wanted</p>
+                <figure class="poster__photo">
+                  <div class="poster__halftone">
+                    <img src="assets/portraits/trang.svg" alt="Chân dung phác thảo Nguyễn Hoàng Mỹ Trang: mũ bác sĩ có chữ thập, áo blouse, ống nghe đeo cổ" width="400" height="280" draggable="false">
+                  </div>
+                </figure>
+                <button class="poster__doa" type="button" aria-expanded="false" aria-controls="dossier-trang" disabled lang="en">Dead or Alive</button>
+                <h3 class="poster__name">
+                  <button class="poster__open" type="button" aria-keyshortcuts="T" disabled>
+                    <span class="visually-hidden">Phóng to lệnh truy nã: </span>
+                    <span class="poster__surname">Nguyễn Hoàng Mỹ</span>
+                    <span class="poster__given">Trang</span>
+                  </button>
+                </h3>
+                <p class="poster__bounty bounty"><span class="berry" aria-hidden="true">฿</span><data data-fill="bounty" value="1097000000">1.097.000.000</data><span aria-hidden="true">-</span><span class="visually-hidden"> Berry</span></p>
+                <p class="poster__epithet">«Bác Sĩ Hồi Sinh Build» · <span lang="en">Doctor/Shipwright</span></p>
+                <p class="poster__footer"><span>Số hiệu 24127565</span><span class="poster__marine" lang="en">Marine</span></p>
+              </div>
+
+              <section class="poster__face poster__face--back dossier" id="dossier-trang" aria-labelledby="dossier-trang-title">
+                <header class="dossier__head">
+                  <p class="dossier__agency">Bộ Tổng Tư lệnh Hải quân · Hồ sơ mật</p>
+                  <h4 class="dossier__title" id="dossier-trang-title" tabindex="-1"><span lang="en">Secret Marine Dossier</span> · MR-24127565</h4>
+                  <p class="dossier__stamp" aria-hidden="true">Top Secret</p>
+                </header>
+                <dl class="dossier__facts">
+                  <div><dt>Đối tượng</dt><dd>Nguyễn Hoàng Mỹ Trang</dd></div>
+                  <div><dt>Vai trò</dt><dd>Bác sĩ &amp; thợ đóng tàu (Doctor/Shipwright)</dd></div>
+                  <div><dt>Tội danh</dt><dd>Phẫu thuật code không cần gây mê, đóng lại thân tàu bằng refactor, viết test khiến bug hết chỗ trốn.</dd></div>
+                  <div><dt>Vũ khí</dt><dd><ul class="dossier__tags"><li>Python</li><li>Java</li><li>SQL</li><li>Unit test</li></ul></dd></div>
+                  <div><dt>Mức nguy hiểm</dt><dd><span class="dossier__threat" aria-hidden="true">☠︎☠︎☠︎☠︎<span class="dossier__threat-off">☠︎</span></span><span class="visually-hidden">4 trên 5</span></dd></div>
+                </dl>
+                <h5 class="dossier__case-title">Vụ án nổi bật: Ca cấp cứu bản build</h5>
+                <dl class="dossier__case">
+                  <dt>Bối cảnh</dt>
+                  <dd>Sau một lần gộp code lớn, bộ chấm tự động của đồ án báo lỗi hàng loạt và không ai biết nên bắt đầu sửa từ đâu.</dd>
+                  <dt>Hành động</dt>
+                  <dd>Viết unit test cho từng module để khoanh vùng lỗi, tách các hàm dài thành hàm nhỏ, mỗi hàm một nhiệm vụ rõ ràng.</dd>
+                  <dt>Kết quả</dt>
+                  <dd>Độ phủ test (coverage) tăng từ 0% lên 70%. Bản build xanh trở lại trước hạn nộp.</dd>
+                </dl>
+                <table class="dossier__calc">
+                  <caption>Cách Hải quân định giá</caption>
+                  <tbody>
+                    <tr><th scope="row">Dòng code</th><td><span data-fill="loc">38.900</span> × <span data-rate="loc">10.000</span></td><td data-fill="loc-berry">389.000.000</td></tr>
+                    <tr><th scope="row">Dự án</th><td><span data-fill="projects">7</span> × <span data-rate="projects">50.000.000</span></td><td data-fill="projects-berry">350.000.000</td></tr>
+                    <tr><th scope="row">Bug đã diệt</th><td><span data-fill="bugs">358</span> × <span data-rate="bugs">1.000.000</span></td><td data-fill="bugs-berry">358.000.000</td></tr>
+                  </tbody>
+                  <tfoot><tr><th scope="row" colspan="2">Tiền truy nã</th><td>฿ <span data-fill="bounty">1.097.000.000</span></td></tr></tfoot>
+                </table>
+                <p class="dossier__note"><strong>Ghi chú của Hải quân:</strong> Bệnh nhân (codebase) được cứu sống 7 trên 7 lần.</p>
+                <button class="dossier__back js-only" type="button" disabled>↩ Lật lại lệnh truy nã</button>
+              </section>
+            </article>
+          </div>
+          <span class="poster__scrap" aria-hidden="true"></span>
+        </li>
+      </ul>
+
+      <div class="lantern js-only" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ SECTION 2: SỔ TRUY NÃ ============ -->
+    <section id="bounty-ledger" class="ledger" aria-labelledby="ledger-title">
+      <div class="ledger__book">
+        <p class="ledger__kicker" lang="en">Marine Bounty Ledger</p>
+        <h2 id="ledger-title" class="ledger__title">Sổ truy nã của Hải quân</h2>
+        <p class="ledger__lead">
+          Hải quân không treo giá bừa. Mỗi Berry trên poster được quy đổi từ ba loại bằng chứng:
+          số dòng code đã viết, số dự án đã hoàn thành và số bug đã bị tiêu diệt.
+        </p>
+        <p class="ledger__formula">
+          <code>Tiền truy nã = Dòng code × <span data-rate="loc">10.000</span> + Dự án × <span data-rate="projects">50.000.000</span> + Bug × <span data-rate="bugs">1.000.000</span></code>
+        </p>
+
+        <table class="ledger__table">
+          <caption class="visually-hidden">Chỉ số và tiền truy nã của từng thành viên</caption>
+          <thead>
+            <tr>
+              <th scope="col">Thành viên</th>
+              <th scope="col">Vai trò</th>
+              <th scope="col">Dòng code</th>
+              <th scope="col">Dự án</th>
+              <th scope="col">Bug đã diệt</th>
+              <th scope="col">Tiền truy nã (฿)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-member="hiep">
+              <th scope="row">Phan Quang Hiệp</th>
+              <td data-label="Vai trò">Captain</td>
+              <td data-label="Dòng code" data-fill="loc">52.400</td>
+              <td data-label="Dự án" data-fill="projects">8</td>
+              <td data-label="Bug đã diệt" data-fill="bugs">287</td>
+              <td data-label="Tiền truy nã (฿)" data-fill="bounty">1.211.000.000</td>
+            </tr>
+            <tr data-member="nhan">
+              <th scope="row">Trần Nguyễn Đình Nhân</th>
+              <td data-label="Vai trò">Navigator</td>
+              <td data-label="Dòng code" data-fill="loc">41.800</td>
+              <td data-label="Dự án" data-fill="projects">7</td>
+              <td data-label="Bug đã diệt" data-fill="bugs">196</td>
+              <td data-label="Tiền truy nã (฿)" data-fill="bounty">964.000.000</td>
+            </tr>
+            <tr data-member="phuoc">
+              <th scope="row">Lê Nho Duy Phước</th>
+              <td data-label="Vai trò">Sniper</td>
+              <td data-label="Dòng code" data-fill="loc">46.300</td>
+              <td data-label="Dự án" data-fill="projects">6</td>
+              <td data-label="Bug đã diệt" data-fill="bugs">241</td>
+              <td data-label="Tiền truy nã (฿)" data-fill="bounty">1.004.000.000</td>
+            </tr>
+            <tr data-member="trang">
+              <th scope="row">Nguyễn Hoàng Mỹ Trang</th>
+              <td data-label="Vai trò">Doctor/Shipwright</td>
+              <td data-label="Dòng code" data-fill="loc">38.900</td>
+              <td data-label="Dự án" data-fill="projects">7</td>
+              <td data-label="Bug đã diệt" data-fill="bugs">358</td>
+              <td data-label="Tiền truy nã (฿)" data-fill="bounty">1.097.000.000</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th scope="row" colspan="5">Tổng truy nã cả băng</th>
+              <td data-label="Tổng (฿)"><data class="js-count" data-fill="total" value="4276000000">4.276.000.000</data></td>
+            </tr>
+          </tfoot>
+        </table>
+        <p class="ledger__stamp" aria-hidden="true">Đã xác minh</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__crew-name">Băng Hải Tặc Dấu Chấm Phẩy · Bài tập Block 1: HTML, CSS &amp; JavaScript</p>
+    <ul class="site-footer__crew">
+      <li><span>24127039</span> Phan Quang Hiệp</li>
+      <li><span>24127093</span> Trần Nguyễn Đình Nhân</li>
+      <li><span>24127508</span> Lê Nho Duy Phước</li>
+      <li><span>24127565</span> Nguyễn Hoàng Mỹ Trang</li>
+    </ul>
+    <p class="site-footer__note">Lấy cảm hứng từ lệnh truy nã trong <cite>One Piece</cite> của Eiichiro Oda. Sản phẩm học tập, phi thương mại.</p>
+  </footer>
+
+  <!-- Khung phóng to poster (focus zoom). JS chuyển poster thật vào đây rồi trả về tường khi đóng. -->
+  <dialog class="viewer" id="viewer" aria-label="Lệnh truy nã phóng to">
+    <div class="viewer__bar">
+      <button class="viewer__btn" type="button" data-step="-1" aria-label="Thành viên trước">‹</button>
+      <p class="viewer__count" aria-live="polite"></p>
+      <button class="viewer__btn" type="button" data-step="1" aria-label="Thành viên sau">›</button>
+      <button class="viewer__btn viewer__close" type="button" aria-label="Đóng và dán lại lên tường">✕</button>
+    </div>
+    <div class="viewer__stage"></div>
+    <p class="viewer__hint"><kbd>←</kbd> <kbd>→</kbd> đổi thành viên · <kbd>Esc</kbd> dán lại lên tường</p>
+  </dialog>
+</body>
+</html>

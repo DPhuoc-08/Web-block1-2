@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Cờ hải tặc Dấu Chấm Phẩy">
+  <g stroke="#f1e6c8" stroke-width="9" stroke-linecap="round">
+    <line x1="14" y1="26" x2="86" y2="92"/>
+    <line x1="86" y1="26" x2="14" y2="92"/>
+  </g>
+  <g fill="#f1e6c8">
+    <circle cx="10" cy="24" r="6"/><circle cx="16" cy="19" r="6"/>
+    <circle cx="90" cy="24" r="6"/><circle cx="84" cy="19" r="6"/>
+    <circle cx="10" cy="92" r="6"/><circle cx="16" cy="97" r="6"/>
+    <circle cx="90" cy="92" r="6"/><circle cx="84" cy="97" r="6"/>
+  </g>
+  <path fill="#f1e6c8" stroke="#1a0f08" stroke-width="2" d="M50 14C30 14 20 28 20 44c0 11 6 18 12 22v10c0 3 2 5 5 5h26c3 0 5-2 5-5V66c6-4 12-11 12-22 0-16-10-30-30-30z"/>
+  <path fill="#8e1b12" stroke="#1a0f08" stroke-width="2" d="M20 41c2-18 16-28 30-28s28 10 30 28c-10-6-50-6-60 0z"/>
+  <path fill="#8e1b12" stroke="#1a0f08" stroke-width="2" d="M77 33l15-7-3 13z"/>
+  <circle cx="50" cy="22" r="2.6" fill="#f1e6c8"/>
+  <path fill="#f1e6c8" d="M48 28h4.6c0 4-1.6 6.5-4.4 7.6l-.8-1.4c1.4-.8 2-2 2-3.4H48z"/>
+  <g fill="#1a0f08">
+    <ellipse cx="39" cy="48" rx="8" ry="9"/>
+    <ellipse cx="61" cy="48" rx="8" ry="9"/>
+    <path d="M50 57l-4.5 8h9z"/>
+  </g>
+  <g stroke="#1a0f08" stroke-width="2">
+    <line x1="42" y1="70" x2="42" y2="81"/>
+    <line x1="50" y1="70" x2="50" y2="81"/>
+    <line x1="58" y1="70" x2="58" y2="81"/>
+  </g>
+</svg>

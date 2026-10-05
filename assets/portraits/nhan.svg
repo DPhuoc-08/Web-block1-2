@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 280">
+  <!-- Chân dung minh họa tạm: Navigator. Thay bằng ảnh thật (cùng tên file hoặc sửa src trong index.html). -->
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="42%" r="72%">
+      <stop offset="0" stop-color="#f4f4f4"/><stop offset=".65" stop-color="#c2c2c2"/><stop offset="1" stop-color="#828282"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#eeeeee"/><stop offset="1" stop-color="#bdbdbd"/>
+    </linearGradient>
+    <clipPath id="torso"><path d="M60 280c12-44 72-60 140-60s128 16 140 60z"/></clipPath>
+    <filter id="rough" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="11"/>
+      <feDisplacementMap in="SourceGraphic" scale="3.5"/>
+    </filter>
+  </defs>
+  <rect width="400" height="280" fill="url(#bg)"/>
+  <g fill="none" stroke="#a8a8a8" stroke-width="2.5">
+    <path d="M0 60h400M0 120h400M0 180h400M0 240h400M60 0v280M140 0v280M260 0v280M340 0v280"/>
+    <path d="M20 230c40-30 70 10 110-20s60 0 80-10" stroke-dasharray="8 6" stroke-width="3"/>
+    <circle cx="340" cy="60" r="26"/><path d="M340 26v68M306 60h68"/>
+  </g>
+  <g filter="url(#rough)" stroke="#141414" stroke-width="4" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M138 160c-12-50 12-90 62-90s74 40 62 90c0 26-10 40-16 46l4-56H150l4 56c-6-6-16-20-16-46z" fill="#2e2e2e"/>
+    <path d="M60 280c12-44 72-60 140-60s128 16 140 60z" fill="#e4e4e4"/>
+    <g clip-path="url(#torso)" stroke="none" fill="#555">
+      <rect x="0" y="232" width="400" height="9"/><rect x="0" y="252" width="400" height="9"/><rect x="0" y="272" width="400" height="9"/>
+    </g>
+    <path d="M178 188v34c8 8 36 8 44 0v-34z" fill="#cfcfcf"/>
+    <path d="M186 226q14 18 28 0" fill="none" stroke-width="2.5"/>
+    <circle cx="200" cy="250" r="15" fill="#bdbdbd"/>
+    <path d="M200 238l4 12-4 12-4-12z" fill="#222" stroke-width="1.5"/>
+    <ellipse cx="146" cy="152" rx="11" ry="16" fill="#d6d6d6"/>
+    <ellipse cx="254" cy="152" rx="11" ry="16" fill="#d6d6d6"/>
+    <path d="M146 140c0-36 24-58 54-58s54 22 54 58c0 44-24 76-54 76s-54-32-54-76z" fill="url(#skin)"/>
+    <path d="M146 140c4-38 30-52 54-52s50 14 54 52c-14-18-32-26-48-18-14-12-40-6-60 18z" fill="#2e2e2e"/>
+    <path d="M144 118c26-18 86-18 112 0v12c-26-18-86-18-112 0z" fill="#8c8c8c"/>
+    <path d="M254 120l28-10-6 18zM254 126l24 12-12 7z" fill="#8c8c8c"/>
+    <path d="M262 132l14-42 7 3-14 42z" fill="#d6d6d6"/>
+    <path d="M276 90l3-8 4 11z" fill="#333"/>
+    <path d="M166 138h24M210 138h24" fill="none" stroke-width="6"/>
+    <path d="M168 152q11-9 22 0q-11 6-22 0z" fill="#fff"/>
+    <path d="M210 152q11-9 22 0q-11 6-22 0z" fill="#fff"/>
+    <circle cx="180" cy="151" r="4.5" fill="#111" stroke="none"/>
+    <circle cx="222" cy="151" r="4.5" fill="#111" stroke="none"/>
+    <path d="M200 158q-6 11 3 14" fill="none" stroke-width="3"/>
+    <path d="M178 186q22 16 44 0" fill="none"/>
+  </g>
+  <text x="386" y="268" text-anchor="end" font-family="Georgia, serif" font-size="20" font-style="italic" fill="#333">T.N.Đ.N</text>
+</svg>
